@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.ama.finanzapp.ui.home.HomeFragment"
+        android:label="Inicio"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/nav_ajuste"
+        android:name="com.ama.finanzapp.ui.ajuste.AjusteFragment"
+        android:label="Salir"
+        tools:layout="@layout/fragment_ajuste" />
+    <fragment
+        android:id="@+id/nav_anadir"
+        android:name="com.ama.finanzapp.ui.añadir.AnadirFragment"
+        android:label="Añadir"
+        tools:layout="@layout/fragment_anadir" />
+
+</navigation>

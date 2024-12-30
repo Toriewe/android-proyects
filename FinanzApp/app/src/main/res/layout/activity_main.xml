@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FinanzApp"
+        android:textSize="40sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"/>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/ic_login"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Correo"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="50dp"/>
+    
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Ingrese su correo"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contraseña"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="50dp"/>
+
+    <EditText
+        android:id="@+id/edtContrasena"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="textPassword"
+        android:hint="Ingrese su contraseña"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"/>
+
+    <Button
+        android:id="@+id/btnIngresar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="50dp"
+        android:text="Ingresar"
+        android:textColor="@color/white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="¿No tienes una cuenta?"/>
+
+        <TextView
+            android:id="@+id/txvRegistrar"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:textColor="#03A688"
+            android:text="Regístrate"
+            android:clickable="true"
+            android:onClick="onTextClick"
+            android:focusable="true" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ActualizarActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="90dp"
+        android:text="Ver detalles"
+        android:textSize="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ganancia"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="55dp"/>
+
+    <EditText
+        android:id="@+id/edtVerG"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp"
+        android:hint="Ingrese nueva ganancia"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:enabled="false"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gasto"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="55dp"/>
+
+    <EditText
+        android:id="@+id/edtVerP"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp"
+        android:hint="Ingrese nuevo gasto"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:enabled="false"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="55dp"/>
+
+    <EditText
+        android:id="@+id/edtVerM"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp"
+        android:hint="Nuevo total"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:enabled="false"/>
+    <TextView
+        android:id="@+id/txvDato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="55dp"/>
+
+    <CheckBox
+        android:id="@+id/chkActualizar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="20dp"
+        android:text="Actualizar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/btnRegresar"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Volver"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnEliminar"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#bc103b"
+            android:text="Eliminar"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>
